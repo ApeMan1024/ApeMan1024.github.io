@@ -18,9 +18,6 @@ $(function(){
         text+=$(this).text();
     });
     text+=$(".blo_left .browse .browse_4").text();
-    // $(".blo_left .browse .browse_4 p").each(function(){
-    //     text+=$(this).text();
-    // });
     var url="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=4&text="+text;
     $("<audio id='audio1'></audio>").prop("src",url).appendTo(".blo_left .browse .bo");
     $(".blo_left .browse .bo").click(function(){
